@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: podinfo
-        image: raghu486.azurecr.io/podinfo
+        image: raghu486.azurecr.io/podinfo:$(Build.BuildId)
         imagePullPolicy: Always
         ports:
         - containerPort: 4444
